@@ -20,11 +20,14 @@ Commands
 --------
 ```
 $ dokku help
-    rabbitmq:create <app>           Create a Rabbitmq container
-    rabbitmq:delete <app>           Delete specific Rabbitmq container
-    rabbitmq:info <app>             Display container informations
-    rabbitmq:link <app> <rabbit>    Link an app to a Rabbitmq container
-    rabbitmq:logs <app>             Display last logs from Rabbitmq container
+    rabbitmq:create <app>                         Create a RabbitMQ container for <app>
+    rabbitmq:clone <app> <trg>                    Clone RabbitMQ container of <app> for <trg>
+    rabbitmq:rebuild <app>                        Rebuild RabbitMQ container of <app> (keep persistend data)
+    rabbitmq:delete <app>                         Delete specified RabbitMQ container for <app>
+    rabbitmq:info <app>                           Display <app> RabbitMQ container informations
+    rabbitmq:link <app> <rabbit>                  Link an app to a RabbitMQ container
+    rabbitmq:list                                 Display list of RabbitMQ containers
+    rabbitmq:logs <app>                           Display last logs from <app> RabbitMQ container
 ```
 
 TODO:
